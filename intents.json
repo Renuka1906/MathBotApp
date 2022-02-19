@@ -1,0 +1,117 @@
+{"intents" : [
+  {"tag": "greeting",
+    "patterns": ["Hi there", "Hey", "Hello", "Good day"],
+    "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+    "links": [""],
+    "context_set": ""
+  },
+  {"tag": "greetingMore",
+    "patterns": [ "How are you", "Whats up"],
+    "responses": ["I am fine!, How about you?", "I am good, you?"],
+    "links": [""],
+    "context_set": ""
+  },
+  {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?"],
+    "responses": ["You can call me John.", "I'm John!", "I'm John aka John Doe."],
+    "links": [""],
+    "context_set": ""
+  },
+  {"tag": "goodbye",
+    "patterns": ["Bye", "See you later", "Goodbye", "Thanks for the help, bye", "Till next time"],
+    "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+    "links":[""],
+    "context_set":  ""
+  },
+  {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"],
+    "links":[""],
+    "context_set": ""
+  },
+  {"tag": "thanks",
+    "patterns": [],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+    "links": [""],
+    "context_set": ""
+  },
+  {"tag": "options",
+    "patterns": ["Can you help me?", "What can you do?", "What help do you provide?", "What support is offered", "I need help with maths, how you can do"],
+    "responses": ["I can guide you through maths problems: algebra, trigonometry, graphs, shapes and probability. Please tell which topic you want...."],
+    "links": [""],
+    "context_set": ""
+  },
+  {"tag": "algebra",
+    "patterns": ["Algebra please", "Open algebra module", "What is algebra?", "I need help with algebra"],
+    "responses": ["Algebra is a branch of mathematics that deals with symbols and rules for manipulating those symbols. Algebra involves algebraic expressions or manipulating equations. Studying algebra helps you to think logically and critically to solve many problems both in studies and in real-life situations. Navigating to algebra module...."],
+    "links": ["https://www.youtube.com/watch?v=5Q0FlxcEEIw", "https://www.youtube.com/watch?v=NybHckSEQBI"],
+    "context_set": ""
+  },
+  {"tag": "trigonometry",
+    "patterns": ["Trigonometry please", "Open trigonometry module", "What is trigonometry", "I need help with trigonometry"],
+    "responses": ["Trigonometry is a branch of mathematics that studies relationships between side lengths and angles of triangles. The six trigonometric ratios are sine (sin), cosine (cos), tangent (tan), cotangent (cot), cosecant (cosec), and secant (sec). In geometry, trigonometry is a branch of mathematics that deals with the sides and angles of a right-angled triangle. Therefore, trig ratios are evaluated with respect to sides and angles."],
+    "links": ["https://www.youtube.com/watch?v=T9lt6MZKLck", "https://www.youtube.com/watch?v=PUB0TaZ7bhA"],
+    "context_set": ""
+  },
+  {"tag": "graphs",
+    "patterns": ["Graph please", "Open graphs module", "What is graph", "I need help with graphs"],
+    "responses": ["A diagram in which a line or a curve shows the relationship between two quantities, measurements, etc. And a graph can be defined as a pictorial representation or a diagram that represents data or values in an organized manner...."],
+    "links": ["https://www.youtube.com/watch?v=l61owCcnrPI", "https://study.com/academy/lesson/graphs-in-discrete-math-definition-types-uses.html"],
+    "context_set": ""
+  },
+  {"tag": "probability",
+    "patterns": ["Probability please", "Open probability module",  "I need help with probability"],
+    "responses": ["Navigating to probability module"],
+    "links": [""],
+    "context": ["probability_search", "probability_exam"]
+  },
+  {"tag": "algebra_search",
+    "patterns": ["How to solve algebra problems?", "Give me a list of algebra rules", "When do algebra problems comes up?" ],
+    "responses": ["Algebra problems come up all the time in every module. Common questions ask you to solve for x or another letter like a. It's useful to remember some common rules: "],
+    "links": [""],
+    "context": [""]
+  },
+  {"tag": "trigonometry_search",
+    "patterns": ["How to solve trig problems?", "Give me a list of trigonometry rules", "When do trigonometry problems comes up?" ],
+    "responses": ["Trigonometry problems come up all the time in every module. Trigonometry is based off triangles therefore common questions ask you to solve triangles. It's useful to remember some common rules: "],
+    "links": [""],
+    "context": [""]
+  },
+  {"tag": "graphs_search",
+    "patterns": ["How to solve graphs problems?", "Give me a list of graphs rules", "When do graphs problems comes up?" ],
+    "responses": ["Graph problems can be used in all topics such as algebra where they are useful to visualise algebra. There are many types of graphs such as:"],
+    "links": [""],
+    "context": [""]
+  },
+  {"tag": "probability_search",
+    "patterns": ["How to solve probability problems?", "Give me a list of probability rules", "When do probability problems comes up?" ],
+    "responses": ["Probability problems usually appear when data is given. It is very useful when predicting how likely a certain outcome will occur. Here are some common rules:"],
+    "links": [""],
+    "context": [""]
+  },
+  {"tag": "algebra_exam",
+    "patterns": ["Can I have some algebra exam questions?", "exam algebra problems" ],
+    "responses": ["Here are good algebra questions:"],
+    "links": [" https://allaboutmaths.aqa.org.uk/attachments/6385.pdf"],
+    "context": [""]
+  },
+  {"tag": "trigonometry_exam",
+    "patterns": ["Can I have some Trigonometry problems please?", "exam trigonometry problems", "trig exam problems"],
+    "responses": ["Here are good trignometry questions:"],
+    "links": [" https://corbettmaths.com/wp-content/uploads/2013/02/trigonometry-pdf1.pdf"],
+    "context":[""]
+  },
+  {"tag": "graphs_exam",
+    "patterns": ["Can I have some graph problems please?", "exam graph problems" ],
+    "responses": ["Here are good graph questions:"],
+    "links": [" https://www.rastrick.calderdale.sch.uk/wp-content/uploads/2020/04/Straight-Line-Graphs-Yr-10-11-Higher.pdf"],
+    "context":[""]
+  },
+  {"tag": "probability_exam",
+    "patterns": ["Can I have some probability problems please?", "exam probability problems" ],
+    "responses": ["Here are good probability questions:"],
+    "links": ["https://corbettmaths.com/wp-content/uploads/2013/02/probability-pdf.pdf"],
+    "context":[""]
+  }
+]
+}
